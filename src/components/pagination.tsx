@@ -25,7 +25,7 @@ export function Pagination({
   return (
     <div className="flex items-center justify-between">
       <span className="text-sm text-muted-foreground">
-        Total de {totalCount} items
+        Total de {totalCount} itens
       </span>
 
       <div className="flex items-center gap-6 lg:gap-8">
@@ -49,7 +49,7 @@ export function Pagination({
             disabled={pageIndex === 0}
           >
             <ChevronLeft className="h-4 w-4" />
-            <span className="sr-only">Próxima página</span>
+            <span className="sr-only">Próxima anterior</span>
           </Button>
           <Button
             onClick={() => onPageChange(pageIndex + 1)}
@@ -58,7 +58,7 @@ export function Pagination({
             disabled={pages <= pageIndex + 1}
           >
             <ChevronRight className="h-4 w-4" />
-            <span className="sr-only">Página anterior</span>
+            <span className="sr-only">Próxima página</span>
           </Button>
           <Button
             onClick={() => onPageChange(pages - 1)}
